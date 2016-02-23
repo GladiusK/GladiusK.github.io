@@ -3,19 +3,19 @@
 <head>
   <meta charset="utf-8">
   
-  <title>余轩的小窝</title>
+  <title>On My Way</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="希望能给您带来一点帮助">
 <meta property="og:type" content="website">
-<meta property="og:title" content="余轩的小窝">
+<meta property="og:title" content="On My Way">
 <meta property="og:url" content="http://gladiusk.github.io/index.html">
-<meta property="og:site_name" content="余轩的小窝">
+<meta property="og:site_name" content="On My Way">
 <meta property="og:description" content="希望能给您带来一点帮助">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="余轩的小窝">
+<meta name="twitter:title" content="On My Way">
 <meta name="twitter:description" content="希望能给您带来一点帮助">
   
-    <link rel="alternative" href="/atom.xml" title="余轩的小窝" type="application/atom+xml">
+    <link rel="alternative" href="/atom.xml" title="On My Way" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
@@ -41,7 +41,7 @@
         </a>
 
         <hgroup>
-          <h1 class="header-author"><a href="/">yuxuan</a></h1>
+          <h1 class="header-author"><a href="/">余轩</a></h1>
         </hgroup>
 
         
@@ -157,7 +157,7 @@
       <nav id="mobile-nav">
       <div class="overlay">
           <div class="slider-trigger"></div>
-          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">yuxuan</a></h1>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">余轩</a></h1>
       </div>
     <div class="intrude-less">
         <header id="header" class="inner">
@@ -165,7 +165,7 @@
                 <img lazy-src="/img/avatar.png" class="js-avatar">
             </a>
             <hgroup>
-              <h1 class="header-author"><a href="/" title="回到主页">yuxuan</a></h1>
+              <h1 class="header-author"><a href="/" title="回到主页">余轩</a></h1>
             </hgroup>
             
             <nav class="header-menu">
@@ -198,6 +198,137 @@
 </nav>
       <div class="body-wrap">
   
+    <article id="post-MongoDB入门" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/02/23/MongoDB入门/" class="article-date">
+      <time datetime="2016-02-23T05:49:54.000Z" itemprop="datePublished">2016-02-23</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/02/23/MongoDB入门/">MongoDB入门</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h1 id="MongoDB"><a href="#MongoDB" class="headerlink" title="MongoDB"></a><a href="https://www.mongodb.org/" target="_blank" rel="external">MongoDB</a></h1><h2 id="MongoDB__u7B80_u4ECB"><a href="#MongoDB__u7B80_u4ECB" class="headerlink" title="MongoDB &#x7B80;&#x4ECB;"></a>MongoDB &#x7B80;&#x4ECB;</h2><p>   MongoDB &#x662F;&#x4E00;&#x4E2A;&#x9762;&#x5411;&#x6587;&#x6863;&#x7684;&#x6570;&#x636E;&#x5E93;&#xFF0C;mongodb&#x4E2D;&#x6709;&#x4E09;&#x5143;&#x7D20;&#xFF1A;&#x6570;&#x636E;&#x5E93;&#xFF0C;&#x96C6;&#x5408;&#xFF0C;&#x6587;&#x6863;&#xFF0C;&#x5176;&#x4E2D;&#x201C;&#x96C6;&#x5408;&#x201D;&#xFF0C;&#x4E0D;&#x518D;&#x6709;&#x9884;&#x5B9A;&#x4E49;&#x7684;&#x6A21;&#x5F0F;<strong>(&#x5B9E;&#x9645;&#x5F00;&#x53D1;&#x8FC7;&#x7A0B;&#x4E2D;&#x8FD8;&#x662F;&#x4F1A;&#x5148;&#x786E;&#x5B9A;&#x4E1A;&#x52A1;&#x6A21;&#x5F0F;)</strong>&#xFF0C;&#x53EF;&#x4EE5;&#x5F88;&#x5BB9;&#x6613;&#x7684;&#x6DFB;&#x52A0;&#x6216;&#x8005;&#x5220;&#x9664;&#x5B57;&#x6BB5;&#x3002;</p>
+<p>&#x5C31;&#x662F;&#x5BF9;&#x5E94;&#x5173;&#x7CFB;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x7684;&#x201C;&#x8868;&#x201D;&#xFF0C;&#x201C;&#x6587;&#x6863;&#x201D;&#x5BF9;&#x5E94;&#x201C;&#x884C;&#x201D;&#x3002;</p>
+<h2 id="mac__u4E0A_u5B89_u88C5MongoDB"><a href="#mac__u4E0A_u5B89_u88C5MongoDB" class="headerlink" title="mac &#x4E0A;&#x5B89;&#x88C5;MongoDB"></a>mac &#x4E0A;&#x5B89;&#x88C5;MongoDB</h2><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">brew search mongodb</span><br><span class="line">brew install mongodb</span><br></pre></td></tr></table></figure>
+<h2 id="MongoDB_u57FA_u672C_u64CD_u4F5C"><a href="#MongoDB_u57FA_u672C_u64CD_u4F5C" class="headerlink" title="MongoDB&#x57FA;&#x672C;&#x64CD;&#x4F5C;"></a>MongoDB&#x57FA;&#x672C;&#x64CD;&#x4F5C;</h2><ul>
+<li>&#x542F;&#x52A8;&#x6570;&#x636E;&#x5E93; <img src="/2016/02/23/MongoDB&#x5165;&#x95E8;/start.png" alt="logo"></li>
+<li>&#x5C55;&#x793A;&#x6240;&#x6709;&#x7684;&#x6570;&#x636E;&#x5E93;&#x3001;&#x9009;&#x62E9;test&#x5E93;&#x3001;&#x5C55;&#x793A;&#x6240;&#x6709;&#x7684;&#x96C6;&#x5408; </li>
+<li>&#x63D2;&#x5165;&#x6570;&#x636E;&#x5230;&#x65B0;&#x7684;&#x96C6;&#x5408;(insert)</li>
+<li><p>&#x67E5;&#x8BE2;&#x521A;&#x624D;&#x63D2;&#x5165;&#x7684;&#x6570;&#x636E;(find)<br> &#x6211;&#x4EEC;&#x5C06;&#x6570;&#x636E;&#x63D2;&#x5165;&#x540E;&#xFF0C;&#x80AF;&#x5B9A;&#x662F;&#x8981;find&#x51FA;&#x6765;&#xFF0C;&#x8FD9;&#x91CC;&#x8981;&#x6CE8;&#x610F;&#x4E24;&#x70B9;&#xFF1A;</p>
+<p> &#x2460; &#x201C;_id&#x201D;&#xFF1A; &#x8FD9;&#x4E2A;&#x5B57;&#x6BB5;&#x662F;&#x6570;&#x636E;&#x5E93;&#x9ED8;&#x8BA4;&#x7ED9;&#x6211;&#x4EEC;&#x52A0;&#x7684;GUID&#xFF0C;&#x76EE;&#x7684;&#x5C31;&#x662F;&#x4FDD;&#x8BC1;&#x6570;&#x636E;&#x7684;&#x552F;&#x4E00;&#x6027;&#x3002;</p>
+<p> &#x2461; &#x4E25;&#x683C;&#x7684;&#x6309;&#x7167;Bson(json &#x7684;&#x6269;&#x5C55;)&#x7684;&#x5F62;&#x5F0F;&#x4E66;&#x5199;&#x6587;&#x6863;<br> <img src="/2016/02/23/MongoDB&#x5165;&#x95E8;/2.png" alt="logo"></p>
+</li>
+<li>&#x66F4;&#x65B0;&#x64CD;&#x4F5C;&#xFF0C;update&#x63A5;&#x6536;&#x81F3;&#x5C11;&#x4E24;&#x4E2A;&#x53C2;&#x6570;&#xFF1A;&#x7B2C;&#x4E00;&#x4E2A;&#x662F;&#x9650;&#x5B9A;&#x6761;&#x4EF6;&#xFF0C;&#x7B2C;&#x4E8C;&#x4E2A;&#x662F;&#x66F4;&#x65B0;&#x7684;&#x6587;&#x6863;</li>
+<li>&#x5220;&#x9664;&#x64CD;&#x4F5C; remove</li>
+</ul>
+<h2 id="u6570_u636E_u7C7B_u578B"><a href="#u6570_u636E_u7C7B_u578B" class="headerlink" title="&#x6570;&#x636E;&#x7C7B;&#x578B;"></a>&#x6570;&#x636E;&#x7C7B;&#x578B;</h2><h4 id="u57FA_u672C_u6570_u636E_u7C7B_u578B"><a href="#u57FA_u672C_u6570_u636E_u7C7B_u578B" class="headerlink" title="&#x57FA;&#x672C;&#x6570;&#x636E;&#x7C7B;&#x578B;"></a>&#x57FA;&#x672C;&#x6570;&#x636E;&#x7C7B;&#x578B;</h4><ul>
+<li>null</li>
+<li>&#x6570;&#x503C;  {&#x2018;x&#x2019;: 3.14}(&#x9ED8;&#x8BA4;64&#x4F4D;&#x6D6E;&#x70B9;&#x578B;)</li>
+<li>&#x5B57;&#x7B26;&#x4E32;{&#x2018;x&#x2019;:&#x2019;hello&#x2019;}</li>
+<li>&#x5E03;&#x5C14;&#x578B;{&#x2018;x&#x2019;:true}</li>
+<li>&#x65E5;&#x524D; {&#x2018;x&#x2019;: new Date()}</li>
+<li>&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;{&#x2018;x&#x2019;: /foobar/i}</li>
+<li>&#x6570;&#x7EC4; {&#x2018;x&#x2019;: [&#x2018;a&#x2019;,&#x2019;b&#x2019;,&#x2019;c&#x2019;]}</li>
+<li>&#x5185;&#x5D4C;&#x6587;&#x6863; {&#x2018;x&#x2019;: {&#x2018;foo&#x2019;: &#x2018;u&#x2019;}}</li>
+<li>&#x5BF9;&#x8C61;id {&#x2018;x&#x2019;:ObjectId()}<br><strong>MongoDB&#x4E2D;&#x5B58;&#x50A8;&#x7684;&#x6587;&#x6863;&#x5FC5;&#x987B;&#x6709;&#x4E00;&#x4E2A;_id&#x3002;&#x8FD9;&#x4E2A;&#x952E;&#x7684;&#x503C;&#x53EF;&#x4EE5;&#x662F;&#x4EFB;&#x4F55;&#x7C7B;&#x578B;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;ObjectId &#x5BF9;&#x8C61;</strong></li>
+</ul>
+<h2 id="u67E5_u8BE2"><a href="#u67E5_u8BE2" class="headerlink" title="&#x67E5;&#x8BE2;"></a>&#x67E5;&#x8BE2;</h2><h3 id="u6307_u5B9A_u9700_u8981_u8FD4_u56DE_u7684_u952E"><a href="#u6307_u5B9A_u9700_u8981_u8FD4_u56DE_u7684_u952E" class="headerlink" title="&#x6307;&#x5B9A;&#x9700;&#x8981;&#x8FD4;&#x56DE;&#x7684;&#x952E;"></a>&#x6307;&#x5B9A;&#x9700;&#x8981;&#x8FD4;&#x56DE;&#x7684;&#x952E;</h3><p>&#x6709;&#x65F6;&#x5019;&#xFF0C;&#x6211;&#x4EEC;&#x5E76;&#x4E0D;&#x9700;&#x8981;&#x67E5;&#x770B;&#x6587;&#x6863;&#x4E2D;&#x6240;&#x6709;&#x7684;&#x952E;/&#x503C;&#xFF0C;&#x6BD4;&#x5982;&#x6211;&#x4EEC;&#x53EA;&#x60F3;&#x770B;&#x96C6;&#x5408;&#x4E2D;&#x6240;&#x6709;&#x6587;&#x6863;&#x7684;age&#xFF0C;&#x90A3;&#x4E48;&#x53EA;&#x9700;&#x8981;&#x5728;find&#x7684;&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#x4E2D;&#x6307;&#x5B9A;&#x9700;&#x8981;&#x8FD4;&#x56DE;&#x7684;&#x952E;&#x5373;&#x53EF;&#x3002;<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">db.xbj.find({},{<span class="string">&quot;age&quot;</span>: <span class="number">1</span>})</span><br></pre></td></tr></table></figure></p>
+<p>&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;<strong>_id</strong>&#x603B;&#x662F;&#x88AB;&#x8FD4;&#x56DE;&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x60F3;&#x8FD4;&#x56DE;_id&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x5254;&#x9664;<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">db.xbj.find({},{_id:<span class="number">0</span>, <span class="string">&quot;age&quot;</span>:<span class="number">1</span>})</span><br></pre></td></tr></table></figure></p>
+<h3 id="u67E5_u8BE2_u6761_u4EF6"><a href="#u67E5_u8BE2_u6761_u4EF6" class="headerlink" title="&#x67E5;&#x8BE2;&#x6761;&#x4EF6;"></a>&#x67E5;&#x8BE2;&#x6761;&#x4EF6;</h3><ul>
+<li>$gt&#x201D;, &#x201C;$gte&#x201D;, &#x201C;$lt&#x201D;, &#x201C;$lte&#x201D;, &#x201C;$ne&#x201D; &#x6BD4;&#x8F83;&#x64CD;&#x4F5C;&#x7B26; &#x5BF9;&#x5E94; &gt;,&gt;=,&lt;,&lt;=,!<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">db.xbj.find({age: <span class="variable">$gt</span>:<span class="number">18</span>, <span class="variable">$lt</span>:<span class="number">22</span>})</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h4 id="OR__u67E5_u8BE2"><a href="#OR__u67E5_u8BE2" class="headerlink" title="OR &#x67E5;&#x8BE2;"></a>OR &#x67E5;&#x8BE2;</h4><p>MongoDB &#x4E2D;&#x6709;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;&#x53EF;&#x4EE5;&#x8FDB;&#x884C;OR &#x67E5;&#x8BE2;&#xFF1A;</p>
+<ul>
+<li><p>$in/$nin</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">db.xbj.find({<span class="string">&apos;age&apos;</span>:{<span class="string">&apos;$in&apos;</span>:[<span class="number">18</span>,<span class="number">22</span>]}})</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>$or</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">db.xbj.find({<span class="string">&apos;$or&apos;</span>:[{<span class="string">&apos;name&apos;</span>:<span class="string">&apos;yx&apos;</span>},{<span class="string">&apos;age&apos;</span>:<span class="number">22</span>}]})</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h5 id="24not"><a href="#24not" class="headerlink" title="$not"></a>$not</h5><p>$not &#x662F;&#x5143;&#x6761;&#x4EF6;&#x53E5;&#xFF0C;&#x5373;&#x53EF;&#x4EE5;&#x7528;&#x5728;&#x4EFB;&#x4F55;&#x5176;&#x4ED6;&#x6761;&#x4EF6;&#x4E4B;&#x4E0A;&#x3002;<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">db.xbj.find({<span class="string">&apos;age&apos;</span> :{<span class="variable">$not</span>: {<span class="string">&apos;$lte&apos;</span>:<span class="number">19</span>}}})</span><br></pre></td></tr></table></figure></p>
+<h3 id="u7279_u5B9A_u7C7B_u578B_u7684_u67E5_u8BE2"><a href="#u7279_u5B9A_u7C7B_u578B_u7684_u67E5_u8BE2" class="headerlink" title="&#x7279;&#x5B9A;&#x7C7B;&#x578B;&#x7684;&#x67E5;&#x8BE2;"></a>&#x7279;&#x5B9A;&#x7C7B;&#x578B;&#x7684;&#x67E5;&#x8BE2;</h3><h4 id="null"><a href="#null" class="headerlink" title="null"></a>null</h4><ul>
+<li>&#x53EF;&#x4EE5;&#x5339;&#x914D;&#x6570;&#x503C;&#x4E3A;null&#x7684;&#x6587;&#x6863;</li>
+<li>&#x8FD8;&#x4F1A;&#x5339;&#x914D;&#x4E0D;&#x5305;&#x542B;&#x8FD9;&#x4E2A;&#x952E;&#x7684;&#x6587;&#x6863;<br>&#x6BD4;&#x5982;&#xFF1A;<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">db.xbj.find({adr: null})</span><br><span class="line">db.xbj.find({sex: null})</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p><img src="/2016/02/23/MongoDB&#x5165;&#x95E8;/3.png" alt="logo"></p>
+<p><strong>&#x5982;&#x679C;&#x53EA;&#x60F3;&#x5339;&#x914D;&#x503C;&#x4E3A;null&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x6CA1;&#x6709;&#x8FD9;&#x4E2A;&#x952E;&#x7684;&#x8BB0;&#x5F55;&#x90A3;&#x4E48;&#x9700;&#x8981;&#x4F7F;&#x7528;$exists
+</strong></p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">db.xbj.find({<span class="string">&apos;sex&apos;</span>: {<span class="string">&apos;$in&apos;</span>: [null], <span class="string">&apos;$exists&apos;</span>: <span class="literal">true</span>}})</span><br></pre></td></tr></table></figure>
+<h4 id="u6B63_u5219_u8868_u8FBE_u5F0F"><a href="#u6B63_u5219_u8868_u8FBE_u5F0F" class="headerlink" title="&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;"></a>&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;</h4><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">db.xbj.find({<span class="string">&apos;name&apos;</span>: /yx/i})</span><br></pre></td></tr></table></figure>
+<p><strong>MongoDB&#x4F7F;&#x7528;Perl&#x517C;&#x5BB9;&#x7684;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#xFF08;PCRE)&#x5E93;&#x6765;&#x5339;&#x914D;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x4EFB;&#x4F55;PCRE&#x652F;&#x6301;&#x7684;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x8BED;&#x6CD5;&#x90FD;&#x80FD;&#x88AB;MongoDB&#x63A5;&#x6536;&#xFF0C;&#x5EFA;&#x8BAE;&#x5728;&#x67E5;&#x8BE2;&#x4E2D;&#x4F7F;&#x7528;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x524D;&#x73B0;&#x5728;JavaScript shell &#x4E2D;&#x68C0;&#x67E5;&#x4E0B;&#x8BED;&#x6CD5;&#xFF0C;&#x786E;&#x4FDD;&#x7ED3;&#x679C;&#x548C;&#x8BBE;&#x60F3;&#x4E00;&#x81F4;</strong></p>
+<h4 id="u67E5_u8BE2_u6570_u7EC4"><a href="#u67E5_u8BE2_u6570_u7EC4" class="headerlink" title="&#x67E5;&#x8BE2;&#x6570;&#x7EC4;"></a>&#x67E5;&#x8BE2;&#x6570;&#x7EC4;</h4><p>&#x67E5;&#x8BE2;&#x6570;&#x7EC4;&#x5143;&#x7D20;&#x548C;&#x67E5;&#x8BE2;&#x6807;&#x91CF;&#x503C;&#x662F;&#x4E00;&#x6837;&#x7684;&#x3002;<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">db.xbj.find({<span class="string">&apos;fruit&apos;</span>:<span class="string">&apos;banana&apos;</span>})</span><br></pre></td></tr></table></figure></p>
+<h4 id="24all"><a href="#24all" class="headerlink" title="$all"></a>$all</h4><p>&#x5982;&#x679C;&#x9700;&#x8981;&#x901A;&#x8FC7;&#x591A;&#x4E2A;&#x5143;&#x7D20;&#x6765;&#x5339;&#x914D;&#x6570;&#x7EC4;&#xFF0C;&#x5C31;&#x8981;&#x4F7F;&#x7528;$all.<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">db.xbj.find({<span class="string">&apos;fruit&apos;</span>: {<span class="string">&apos;$all&apos;</span>: [<span class="string">&apos;apple&apos;</span>,<span class="string">&apos;banana&apos;</span>]}})</span><br></pre></td></tr></table></figure></p>
+<p>&#x5982;&#x679C;&#x8981;&#x5339;&#x914D;&#x6570;&#x7EC4;&#x7279;&#x5B9A;&#x4F4D;&#x7F6E;&#x7684;&#x5143;&#x7D20;&#xFF0C;&#x9700;&#x8981;&#x4F7F;&#x7528;key.index&#x8BED;&#x6CD5;&#x6307;&#x5B9A;&#x4E0B;&#x6807;:<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">db.xbj.find({<span class="string">&apos;fruit.2&apos;</span> : <span class="string">&apos;peach&apos;</span>})</span><br></pre></td></tr></table></figure></p>
+<p><strong>&#x6570;&#x7EC4;&#x4E0B;&#x6807;&#x4ECE;0&#x5F00;&#x59CB;</strong></p>
+<h4 id="24size"><a href="#24size" class="headerlink" title="$size"></a>$size</h4><p>&#x53EF;&#x4EE5;&#x7528;$size&#x67E5;&#x8BE2;&#x7279;&#x5B9A;&#x957F;&#x5EA6;&#x7684;&#x6570;&#x7EC4;<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">db.xbj.find({<span class="string">&apos;fruit&apos;</span>:{<span class="string">&apos;$size&apos;</span>:<span class="number">3</span>}})</span><br></pre></td></tr></table></figure></p>
+<h4 id="24slice"><a href="#24slice" class="headerlink" title="$slice"></a>$slice</h4><p>$slice &#x53EF;&#x4EE5;&#x8FD4;&#x56DE;&#x67D0;&#x4E2A;&#x952E;&#x5339;&#x914D;&#x7684;&#x6570;&#x7EC4;&#x5143;&#x7D20;&#x7684;&#x4E00;&#x4E2A;&#x5B50;&#x96C6;<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">db.xbj.find({<span class="string">&apos;comments&apos;</span>:{<span class="string">&apos;$fruit&apos;</span>: <span class="number">2</span>}})</span><br></pre></td></tr></table></figure></p>
+<p>&#x53EA;&#x8FD4;&#x56DE;&#x524D;2&#x79CD;&#x6C34;&#x679C;</p>
+<h4 id="24where"><a href="#24where" class="headerlink" title="$where"></a>$where</h4><p>&#x67E5;&#x8BE2;&#x4E2D;&#x7684;&#x65E0;&#x654C;&#x5927;&#x62DB;&#xFF0C;&#x53EF;&#x4EE5;&#x5199;js&#x8BED;&#x53E5;&#x8FDB;&#x884C;&#x67E5;&#x8BE2;&#x8FD4;&#x56DE;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x51E0;&#x4E4E;&#x53EF;&#x4EE5;&#x505A;&#x4EFB;&#x4F55;&#x4E8B;&#x60C5;&#xFF0C;&#x6240;&#x4EE5;&#x5E94;&#x8BE5;&#x4E25;&#x683C;&#x9650;&#x5236;&#x6216;&#x8005;&#x6D88;&#x9664;&#x4F7F;&#x7528;$where<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">db.xbj.find({<span class="string">&apos;$where&apos;</span> : <span class="function"><span class="title">function</span></span>() { <span class="built_in">return</span> this.name === <span class="string">&apos;yx&apos;</span>;}})</span><br></pre></td></tr></table></figure></p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+
+    
+        <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+        <script>
+            var yiliaConfig = {
+            fancybox: true,
+            mathjax: true,
+            animate: true,
+            isHome: true,
+            isPost: false,
+            isArchive: false,
+            isTag: false,
+            isCategory: false,
+            open_in_new: false
+            }
+        </script>
+        
+
+  
     <article id="post-react-motion" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -225,16 +356,20 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <h1 id="React-Motion"><a href="#React-Motion" class="headerlink" title="React-Motion"></a><a href="https://github.com/chenglou/react-motion" target="_blank" rel="external">React-Motion</a></h1><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">import &#123;Motion, spring&#125; from &#39;react-motion&#39;;&#10;// In your render...&#10;&#60;Motion defaultStyle=&#123;&#123;x: 0&#125;&#125; style=&#123;&#123;x: spring(10)&#125;&#125;&#62;&#10;  &#123;value =&#62; &#60;div&#62;&#123;value.x&#125;&#60;/div&#62;&#125;&#10;&#60;/Motion&#62;</span><br></pre></td></tr></table></figure>
-<p>从 0 到 10 的动画</p>
-<h2 id="u5B89_u88C5"><a href="#u5B89_u88C5" class="headerlink" title="安装"></a>安装</h2><h4 id="NPM__u65B9_u5F0F"><a href="#NPM__u65B9_u5F0F" class="headerlink" title="NPM 方式"></a>NPM 方式</h4><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="operator"><span class="keyword">install</span> <span class="comment">--save react-motion</span></span></span><br></pre></td></tr></table></figure>
-<h4 id="Bower__u65B9_u5F0F"><a href="#Bower__u65B9_u5F0F" class="headerlink" title="Bower 方式"></a>Bower 方式</h4><figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bower install --save <span class="string">https:</span><span class="comment">//npmcdn.com/react-motion/bower.zip</span></span><br></pre></td></tr></table></figure>
-<p>或者 在bower.json 配置<br><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  "<span class="attribute">dependencies</span>": <span class="value">&#123;</span><br><span class="line">    "<span class="attribute">react-motion</span>": <span class="value"><span class="string">"https://npmcdn.com/react-motion/bower.zip"</span></span><br><span class="line">  </span>&#125;</span><br><span class="line"></span>&#125;</span><br></pre></td></tr></table></figure></p>
-<p>然后在html引入<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"bower_components/react-motion/build/react-motion.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
-<h4 id="1988_Script_Tag"><a href="#1988_Script_Tag" class="headerlink" title="1988 Script Tag"></a><a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank" rel="external">1988 Script Tag</a></h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"https://npmcdn.com/react-motion/build/react-motion.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span><br><span class="line">(`ReactMotion` 作为模块名)</span><br></pre></td></tr></table></figure>
-<h4 id="u6216_u8005_u4ECEgithub__u4E0A_u81EA_u5DF1_u4E0B_u8F7D_u7F16_u8BD1"><a href="#u6216_u8005_u4ECEgithub__u4E0A_u81EA_u5DF1_u4E0B_u8F7D_u7F16_u8BD1" class="headerlink" title="或者从github 上自己下载编译"></a>或者从github 上自己下载编译</h4><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/chenglou/react-motion.git</span><br><span class="line"><span class="built_in">cd</span> react-motion</span><br><span class="line">npm install</span><br><span class="line">npm run prerelease</span><br></pre></td></tr></table></figure>
-<p><strong>如果用在 React-native</strong>, 用<code>require(&#39;react-motion/native&#39;)</code>代替 <code>require(&#39;react-motion&#39;)</code>.</p>
-<p><em>(P.S. 在你测试你的动画效果前，不要忘记进行编译！)</em></p>
+        <h1 id="React-Motion"><a href="#React-Motion" class="headerlink" title="React-Motion"></a><a href="https://github.com/chenglou/react-motion" target="_blank" rel="external">React-Motion</a></h1><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">import {Motion, spring} from &apos;react-motion&apos;;
+// In your render...
+&lt;Motion defaultStyle={{x: 0}} style={{x: spring(10)}}&gt;
+  {value =&gt; &lt;div&gt;{value.x}&lt;/div&gt;}
+&lt;/Motion&gt;</span><br></pre></td></tr></table></figure>
+<p>&#x4ECE; 0 &#x5230; 10 &#x7684;&#x52A8;&#x753B;</p>
+<h2 id="u5B89_u88C5"><a href="#u5B89_u88C5" class="headerlink" title="&#x5B89;&#x88C5;"></a>&#x5B89;&#x88C5;</h2><h4 id="NPM__u65B9_u5F0F"><a href="#NPM__u65B9_u5F0F" class="headerlink" title="NPM &#x65B9;&#x5F0F;"></a>NPM &#x65B9;&#x5F0F;</h4><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="operator"><span class="keyword">install</span> <span class="comment">--save react-motion</span></span></span><br></pre></td></tr></table></figure>
+<h4 id="Bower__u65B9_u5F0F"><a href="#Bower__u65B9_u5F0F" class="headerlink" title="Bower &#x65B9;&#x5F0F;"></a>Bower &#x65B9;&#x5F0F;</h4><figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bower install --save <span class="string">https:</span><span class="comment">//npmcdn.com/react-motion/bower.zip</span></span><br></pre></td></tr></table></figure>
+<p>&#x6216;&#x8005; &#x5728;bower.json &#x914D;&#x7F6E;<br><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">{</span><br><span class="line">  &quot;<span class="attribute">dependencies</span>&quot;: <span class="value">{</span><br><span class="line">    &quot;<span class="attribute">react-motion</span>&quot;: <span class="value"><span class="string">&quot;https://npmcdn.com/react-motion/bower.zip&quot;</span></span><br><span class="line">  </span>}</span><br><span class="line"></span>}</span><br></pre></td></tr></table></figure></p>
+<p>&#x7136;&#x540E;&#x5728;html&#x5F15;&#x5165;<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">&quot;bower_components/react-motion/build/react-motion.js&quot;</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<h4 id="1988_Script_Tag"><a href="#1988_Script_Tag" class="headerlink" title="1988 Script Tag"></a><a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank" rel="external">1988 Script Tag</a></h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">&quot;https://npmcdn.com/react-motion/build/react-motion.js&quot;</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span><br><span class="line">(`ReactMotion` &#x4F5C;&#x4E3A;&#x6A21;&#x5757;&#x540D;)</span><br></pre></td></tr></table></figure>
+<h4 id="u6216_u8005_u4ECEgithub__u4E0A_u81EA_u5DF1_u4E0B_u8F7D_u7F16_u8BD1"><a href="#u6216_u8005_u4ECEgithub__u4E0A_u81EA_u5DF1_u4E0B_u8F7D_u7F16_u8BD1" class="headerlink" title="&#x6216;&#x8005;&#x4ECE;github &#x4E0A;&#x81EA;&#x5DF1;&#x4E0B;&#x8F7D;&#x7F16;&#x8BD1;"></a>&#x6216;&#x8005;&#x4ECE;github &#x4E0A;&#x81EA;&#x5DF1;&#x4E0B;&#x8F7D;&#x7F16;&#x8BD1;</h4><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/chenglou/react-motion.git</span><br><span class="line"><span class="built_in">cd</span> react-motion</span><br><span class="line">npm install</span><br><span class="line">npm run prerelease</span><br></pre></td></tr></table></figure>
+<p><strong>&#x5982;&#x679C;&#x7528;&#x5728; React-native</strong>, &#x7528;<code>require(&apos;react-motion/native&apos;)</code>&#x4EE3;&#x66FF; <code>require(&apos;react-motion&apos;)</code>.</p>
+<p><em>(P.S. &#x5728;&#x4F60;&#x6D4B;&#x8BD5;&#x4F60;&#x7684;&#x52A8;&#x753B;&#x6548;&#x679C;&#x524D;&#xFF0C;&#x4E0D;&#x8981;&#x5FD8;&#x8BB0;&#x8FDB;&#x884C;&#x7F16;&#x8BD1;&#xFF01;)</em></p>
 <h2 id="Demos"><a href="#Demos" class="headerlink" title="Demos"></a>Demos</h2><ul>
 <li><a href="http://chenglou.github.io/react-motion/demos/demo0-simple-transition" target="_blank" rel="external">Simple Transition</a></li>
 <li><a href="http://chenglou.github.io/react-motion/demos/demo1-chat-heads" target="_blank" rel="external">Chat Heads</a></li>
@@ -245,41 +380,123 @@
 <li><a href="http://chenglou.github.io/react-motion/demos/demo7-water-ripples" target="_blank" rel="external">Water Ripples</a></li>
 <li><a href="http://chenglou.github.io/react-motion/demos/demo8-draggable-list" target="_blank" rel="external">Draggable List</a></li>
 </ul>
-<p><a href="https://github.com/chenglou/react-motion/wiki/Gallery-of-third-party-React-Motion-demos" target="_blank" rel="external">访问wiki获取更多信息!</a></p>
-<h2 id="u8FD9_u4E2A_u5E93_u8BD5_u7740_u53BB_u89E3_u51B3_u7684_u95EE_u9898_uFF1F"><a href="#u8FD9_u4E2A_u5E93_u8BD5_u7740_u53BB_u89E3_u51B3_u7684_u95EE_u9898_uFF1F" class="headerlink" title="这个库试着去解决的问题？"></a>这个库试着去解决的问题？</h2><p><a href="https://www.youtube.com/watch?v=1tavDv5hXpo" target="_blank" rel="external">相关视频</a><br>在95%的动画组件使用情况中，我们不需要自己去使用贝赛尔曲线缓动和设置动画持续时间。设置UI元素的刚度和阻尼，然后的事就交给充满魔力的物理学。这样，你完全不用理会诸如动画行为被打断之类的大量问题。并且提供了一个非常易用的API</p>
-<p>这个库同时为React 的 <code>TransitionGroup</code> 提供了一个更加好的api 选择</p>
-<h2 id="API"><a href="#API" class="headerlink" title="API"></a>API</h2><p>这个库对外提供<code>Motion</code>, <code>StaggeredMotion</code>, <code>TransitionMotion</code>, <code>presets</code>, <code>spring</code> 和 <code>utils</code></p>
-<h4 id="spring_3A_number_-_26gt_3B__3F_5Bstiffness_2C_damping_5D_-_26gt_3B_ConfigurationObject"><a href="#spring_3A_number_-_26gt_3B__3F_5Bstiffness_2C_damping_5D_-_26gt_3B_ConfigurationObject" class="headerlink" title="spring: number -&gt; ?[stiffness, damping] -&gt; ConfigurationObject"></a><code>spring: number -&gt; ?[stiffness, damping] -&gt; ConfigurationObject</code></h4><p>(<strong>注意</strong>: 不包含 版本&lt;0.3.0 的 <code>Spring</code> 组件)<br>一般用来辅助指定如何变化到目标值，比如 <code>sprint(10,[120,17])</code> 返回一个包含私有属性的配置对象，其用来描述一个携带物理学刚度为120和阻尼为17’’如何变动到10。<code>spring(10)</code>不带数组参数时，其默认参数为<code>[170,26]</code>.<br>下面会有更多的使用说明，库的配置参数详情<a href="#presets">点击</a></p>
-<h3 id="26lt_3BMotion_/_26gt_3B"><a href="#26lt_3BMotion_/_26gt_3B" class="headerlink" title="&lt;Motion /&gt;"></a>&lt;Motion /&gt;</h3><p>属性</p>
-<h4 id="defaultStyle_3A__3FObject"><a href="#defaultStyle_3A__3FObject" class="headerlink" title="defaultStyle: ?Object"></a><code>defaultStyle: ?Object</code></h4><p><code>可选的。</code>接受一个任意键的对象，绑定值到你的动画的配置属性值中，这个值只在组件第一次渲染的时候起作用（之后的渲染会忽略这个属性）</p>
-<h4 id="style_3A_Object"><a href="#style_3A_Object" class="headerlink" title="style: Object"></a><code>style: Object</code></h4><p><code>必填</code>。在组件存在的整个周期内必须保持同样的键。如果提供了<code>defaultStyle</code>则必须保持一样的键。和<code>defaultStyle</code>类似，但是目标值需要查询<code>spring</code>的配置：<code>{x: spring(10), y: spring(20, [120, 17])}</code><br><strong>如果没有提供<code>Spring</code>配置，也没有使用下面的子函数参数，而是直接给定一个常数值，程序将直接变化到给定的值</strong></p>
-<h4 id="children_3A_Object_-_26gt_3B__3FReactElement"><a href="#children_3A_Object_-_26gt_3B__3FReactElement" class="headerlink" title="children: Object -&gt; ?ReactElement"></a><code>children: Object -&gt; ?ReactElement</code></h4><p>需要 一个有 <code>interpolated style</code> 对象为参数的 <strong>function</strong>，比如：<code>{x: 5.2, y: 12.1}</code> ，必须返回一个React 元素进行渲染</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#60;Motion defaultStyle=&#123;&#123;x: 0&#125;&#125; style=&#123;&#123;x: spring(10, [120, 17])&#125;&#125;&#62;&#10;  &#123;interpolatedStyle =&#62; &#60;div&#62;&#123;interpolatedStyle.x&#125;&#60;/div&#62;&#125;&#10;&#60;/Motion&#62;</span><br></pre></td></tr></table></figure>
-<h3 id="26lt_3BStaggeredMotion_/_26gt_3B"><a href="#26lt_3BStaggeredMotion_/_26gt_3B" class="headerlink" title="&lt;StaggeredMotion /&gt;"></a>&lt;StaggeredMotion /&gt;</h3><p>当你需要使一系列的元素动起来，你可以使用一个包含<code>motion</code>的数组，然后让数组中的元素挨个动起来。然而常见的情形是，我们想使他们间隔一段时间的一个接一个的动起来。硬编码动画持续时间似乎可以做到。但是，如果使用<strong>&lt;StaggeredMotion /&gt;</strong>将会是一种更加自然的符合物理学的选择，可以让元素的目标位置基于另外一个元素的当前位置</p>
-<h4 id="defaultStyles_3A__3FArray_26lt_3BObject_26gt_3B"><a href="#defaultStyles_3A__3FArray_26lt_3BObject_26gt_3B" class="headerlink" title="defaultStyles: ?Array&lt;Object&gt;"></a><code>defaultStyles: ?Array&lt;Object&gt;</code></h4><p><code>可选</code>.和<code>Motion</code>的defaultStyle属性类似</p>
-<h4 id="styles_3A__3FArray_26lt_3BObject_26gt_3B_-_26gt_3B_Array_26lt_3BObject_26gt_3B"><a href="#styles_3A__3FArray_26lt_3BObject_26gt_3B_-_26gt_3B_Array_26lt_3BObject_26gt_3B" class="headerlink" title="styles: ?Array&lt;Object&gt; -&gt; Array&lt;Object&gt;"></a><code>styles: ?Array&lt;Object&gt; -&gt; Array&lt;Object&gt;</code></h4><p><code>必填</code> <strong>function</strong>。将之前的styles数组作为函数的参数（如果没有提供<code>defaultStyles</code>则<code>undefined</code>作为第一次渲染时候的参数传递给函数</p>
-<h4 id="children_3A_Array_26lt_3BObject_26gt_3B_-_26gt_3B__3FReactElement"><a href="#children_3A_Array_26lt_3BObject_26gt_3B_-_26gt_3B__3FReactElement" class="headerlink" title="children: Array&lt;Object&gt; -&gt; ?ReactElement"></a><code>children: Array&lt;Object&gt; -&gt; ?ReactElement</code></h4><p><code>必填</code> <strong>funciton</strong>。类似<code>Motion</code>的<code>children</code>,但是接收一个 <code>interpolated style</code> 数组,比如 <code>[{x:5},{x:8.1}]</code> </p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#60;StaggeredMotion&#10;  defaultStyles=&#123;[&#123;x: 0&#125;, &#123;x: 10&#125;, &#123;x: 20&#125;]&#125;&#10;  styles=&#123;prevStyles =&#62; prevStyles.map((_, i) =&#62; &#123;&#10;    return i === 0&#10;      ? &#123;x: spring(this.state.mouseX)&#125; // &#31532;&#19968;&#20010;&#20803;&#32032;&#36319;&#38543;&#30528;&#40736;&#26631;&#30340;&#20301;&#32622;&#10;      : prevStyles[i - 1]; // &#20803;&#32032;i &#36319;&#38543;&#30528;&#23427;&#30340;&#21069;&#19968;&#20010;&#20803;&#32032;&#30340;&#20301;&#32622;&#65292;&#21019;&#24314;&#19968;&#20010;&#33258;&#28982;&#30340;&#36816;&#21160;&#30340;`spring`&#21160;&#30011;&#10;  &#125;)&#125;&#62;&#10;  &#123;interpolatedStyles =&#62;&#10;    &#60;div&#62;&#10;      &#123;interpolatedStyles.map((style, i) =&#62;&#10;        &#60;div key=&#123;i&#125; style=&#123;&#123;left: style.x&#125;&#125; /&#62;&#10;      )&#125;&#10;    &#60;/div&#62;&#10;  &#125;&#10;&#60;/StaggeredMotion&#62;</span><br></pre></td></tr></table></figure>
-<h3 id="26lt_3BTransitionMotion_/_26gt_3B"><a href="#26lt_3BTransitionMotion_/_26gt_3B" class="headerlink" title="&lt;TransitionMotion /&gt;"></a>&lt;TransitionMotion /&gt;</h3><p><strong>一个可以帮助你增加和移除动画的神奇组件</strong>。不同于 React的<code>TransitionGroup</code>,<code>TransitionMotion</code> 用元素的<code>styles</code>对象属性的形式来做区分，而不是当元素消失的时候去保留一些元素。</p>
-<p><strong>普遍的思路</strong><br>使用<code>{myKey1: {x: spring(30)}, myKey2: {x: spring(20)}}</code>作为<code>TransitionMotion</code>的<code>styles</code>。<code>interpolated styles</code>被传入到子函数中，一段时间后，参数变化为<code>{myKey1: {x: 15.1}, myKey2: {x: 8.2}}</code></p>
-<p>一段时间过后，你删除了<code>mykey1</code> 和它的<code>style</code>配置，因此新的的<code>styles</code>变为 <code>{mykey2:{x:spring(20)}}</code>。<code>TransitionMotion</code>发现了少了<code>mykey1</code>,但是在<code>interpolated style</code>中还是<strong>保留</strong><code>mykey1</code>的值<code>{myKey1: ..., myKey2: ...}</code>。</p>
-<p>当<code>TransitionMotion</code>调用你提供的<code>willLeave</code> 属性的时候，将<code>mykey1</code>作为参数传递。你需要在<code>willLeave</code>中为<code>mykey1</code>返回一个终态的<code>style</code>配置，比如：<code>{x: spring(50)}</code>,作为其目标值，当<code>interpolatedStyles.myKey1</code>变化到这个值后，就可以让<code>TransitionMotion</code>从<code>interpolated style</code>真正的移除<code>mykey1</code>以及对应的<code>style</code>配置</p>
-<p>终上所述:<code>styles</code>从初始状态 <code>{k1: {x: spring(30)}, k2: {x: spring(20)}}</code>,再次渲染后<code>styles</code>为<code>{k2: {x: spring(20)}}</code>。传递给子函数的<code>interpolated style</code> 中的<code>styles</code>并没有被影响（还是包含了<code>mykey1</code>)，需要注意的是，在<code>k1: configReturnedFromWillLeave</code>(<code>{x: spring(50)}</code>)中返回的<code>mykey1</code>部分并没有真正的存在于<code>styles</code>中。一段时间过后，<code>interpolated styles</code>变为 <code>{k1: {x: 50}, k2: {x: 19.2}}</code>，然后再次渲染的时候，<code>mykey1</code>已经被删除，只剩下<code>{k2: {x: 19.2}}</code>。因此，在最后一次渲染之前，映射在<code>interpolate styles</code>的元素会渲染2次</p>
-<h4 id="defaultStyles_3A__3FObject_26lt_3Bstring_2C_Object_26gt_3B"><a href="#defaultStyles_3A__3FObject_26lt_3Bstring_2C_Object_26gt_3B" class="headerlink" title="defaultStyles: ?Object&lt;string, Object&gt;"></a><code>defaultStyles: ?Object&lt;string, Object&gt;</code></h4><p><code>可选</code>。接受一个<code>{myKey1: styleObject, myKey2: styleObject}</code> 这样的对象，其中每一个<code>styleObject</code>的规则和<code>Motion</code>的<code>defaultStyle</code>一样。其中<code>key</code>必须为唯一的<strong>非数字</strong></p>
-<h4 id="styles_3A_Object__7C__28_3FObject_-_26gt_3B_Object_29"><a href="#styles_3A_Object__7C__28_3FObject_-_26gt_3B_Object_29" class="headerlink" title="styles: Object | (?Object -&gt; Object)"></a><code>styles: Object | (?Object -&gt; Object)</code></h4><p><code>必填</code>。接受一个类似<code>defaultStyles</code>的对象，但是<code>styleObject</code>需要有<code>spring</code>配置（<code>{myKey1: {x: spring(10)}, myKey2: {y: spring(20)}}</code>），或者接受一个带<code>prevStyles</code> 参数（类似<code>StaggeredMotion</code>，你可以交叉的取消动画）和返回值为目标<code>style</code>的方法</p>
-<h4 id="willEnter_3A__28string_2C_Object_2C_Object_2C_Object_2C_Object_29_-_26gt_3B_Object"><a href="#willEnter_3A__28string_2C_Object_2C_Object_2C_Object_2C_Object_29_-_26gt_3B_Object" class="headerlink" title="willEnter: (string, Object, Object, Object, Object) -&gt; Object"></a><code>willEnter: (string, Object, Object, Object, Object) -&gt; Object</code></h4><p><code>可选</code>。传递一个参数为<code>(keyFromStylesThatJustEntered, correspondingStyleOfKey, styles, currentInterpolatedStyle, currentSpeed)</code>返回值为类似<code>defaultStyle</code>的<code>style</code>对象的方法<br>方法的默认返回值为<code>correspondingStyleOfKey</code>，比如上面的例子为<code>{x: spring(20)}</code>。</p>
-<h4 id="willLeave_3A__28string_2C_Object_2C_Object_2C_Object_2C_Object_29_-_26gt_3B_Object"><a href="#willLeave_3A__28string_2C_Object_2C_Object_2C_Object_2C_Object_29_-_26gt_3B_Object" class="headerlink" title="willLeave: (string, Object, Object, Object, Object) -&gt; Object"></a><code>willLeave: (string, Object, Object, Object, Object) -&gt; Object</code></h4><p><code>可选</code>。传递一个参数为<code>(keyThatJustLeft, correspondingStyleOfKey, styles, currentInterpolatedStyle, currentSpeed)</code>并且返回值为包含<code>spring(...)</code>作为目标配置 的<code>style</code>对象</p>
-<p>可选，默认为correspondingStyleOfKey，即立刻从<code>interpolated style</code>中移除key</p>
-<h4 id="children_3A_Object_-_26gt_3B__3FReactElement-1"><a href="#children_3A_Object_-_26gt_3B__3FReactElement-1" class="headerlink" title="children: Object -&gt; ?ReactElement"></a><code>children: Object -&gt; ?ReactElement</code></h4><p><code>必填 **function**</code>.同<code>Motion</code>的<code>children</code>，不同的是接受一个<code>interpolated styles</code>对象</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">const Demo = React.createClass(&#123;&#10;  getInitialState() &#123;&#10;    return &#123;&#10;      blocks: &#123;&#10;        a: &#39;I am a&#39;,&#10;        b: &#39;I am b&#39;,&#10;        c: &#39;I am c&#39;,&#10;      &#125;,&#10;    &#125;;&#10;  &#125;,&#10;&#10;  getStyles() &#123;&#10;    let configs = &#123;&#125;;&#10;    Object.keys(this.state.blocks).forEach(key =&#62; &#123;&#10;      configs[key] = &#123;&#10;        opacity: spring(1),&#10;        text: this.state.blocks[key], // not interpolated&#10;      &#125;;&#10;    &#125;);&#10;    return configs;&#10;  &#125;,&#10;&#10;  // not used here! We don&#39;t add any new item&#10;  willEnter(key) &#123;&#10;    return &#123;&#10;      opacity: spring(0), // start at 0, gradually expand&#10;      text: this.state.blocks[key], // this is really just carried around so&#10;      // that interpolated values can still access the text when the key is gone&#10;      // from actual `styles`&#10;    &#125;;&#10;  &#125;,&#10;&#10;  willLeave(key, style) &#123;&#10;    return &#123;&#10;      opacity: spring(0), // make opacity reach 0, after which we can kill the key&#10;      text: style.text,&#10;    &#125;;&#10;  &#125;,&#10;&#10;  handleClick(key) &#123;&#10;    const &#123;...newBlocks&#125; = this.state.blocks;&#10;    delete newBlocks[key];&#10;    this.setState(&#123;blocks: newBlocks&#125;);&#10;  &#125;,&#10;&#10;  render() &#123;&#10;    return (&#10;      &#60;TransitionMotion&#10;        styles=&#123;this.getStyles()&#125;&#10;        willEnter=&#123;this.willEnter&#125;&#10;        willLeave=&#123;this.willLeave&#125;&#62;&#10;        &#123;interpolatedStyles =&#62;&#10;          &#60;div&#62;&#10;            &#123;Object.keys(interpolatedStyles).map(key =&#62; &#123;&#10;              const &#123;text, ...style&#125; = interpolatedStyles[key];&#10;              return (&#10;                &#60;div onClick=&#123;this.handleClick.bind(null, key)&#125; style=&#123;style&#125;&#62;&#10;                  &#123;text&#125;&#10;                &#60;/div&#62;&#10;              );&#10;            &#125;)&#125;&#10;          &#60;/div&#62;&#10;        &#125;&#10;      &#60;/TransitionMotion&#62;&#10;    );&#10;  &#125;,&#10;&#125;);</span><br></pre></td></tr></table></figure>
-<h3 id="presets"><a href="#presets" class="headerlink" title="presets"></a><code>presets</code></h3><p>你可以优雅的在你的<code>style</code>预置你的<code>spring</code>参数，就像这样<code>spring(10, presets.wobbly)</code>. <a href="https://github.com/chenglou/react-motion/blob/043231a84e420ba1cc7f5b0ceb1753a6406d38f1/src/presets.js" target="_blank" rel="external">点击详情</a>.</p>
-<h3 id="utils"><a href="#utils" class="headerlink" title="utils"></a><code>utils</code></h3><p>因为<code>TransitionMotion</code>规定<code>styles</code>必须为一个对象，操作对象中的<code>key</code>会比操作数组显得繁琐，下面有一些公共场景下的解决方案：</p>
+<p><a href="https://github.com/chenglou/react-motion/wiki/Gallery-of-third-party-React-Motion-demos" target="_blank" rel="external">&#x8BBF;&#x95EE;wiki&#x83B7;&#x53D6;&#x66F4;&#x591A;&#x4FE1;&#x606F;!</a></p>
+<h2 id="u8FD9_u4E2A_u5E93_u8BD5_u7740_u53BB_u89E3_u51B3_u7684_u95EE_u9898_uFF1F"><a href="#u8FD9_u4E2A_u5E93_u8BD5_u7740_u53BB_u89E3_u51B3_u7684_u95EE_u9898_uFF1F" class="headerlink" title="&#x8FD9;&#x4E2A;&#x5E93;&#x8BD5;&#x7740;&#x53BB;&#x89E3;&#x51B3;&#x7684;&#x95EE;&#x9898;&#xFF1F;"></a>&#x8FD9;&#x4E2A;&#x5E93;&#x8BD5;&#x7740;&#x53BB;&#x89E3;&#x51B3;&#x7684;&#x95EE;&#x9898;&#xFF1F;</h2><p><a href="https://www.youtube.com/watch?v=1tavDv5hXpo" target="_blank" rel="external">&#x76F8;&#x5173;&#x89C6;&#x9891;</a><br>&#x5728;95%&#x7684;&#x52A8;&#x753B;&#x7EC4;&#x4EF6;&#x4F7F;&#x7528;&#x60C5;&#x51B5;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x4E0D;&#x9700;&#x8981;&#x81EA;&#x5DF1;&#x53BB;&#x4F7F;&#x7528;&#x8D1D;&#x8D5B;&#x5C14;&#x66F2;&#x7EBF;&#x7F13;&#x52A8;&#x548C;&#x8BBE;&#x7F6E;&#x52A8;&#x753B;&#x6301;&#x7EED;&#x65F6;&#x95F4;&#x3002;&#x8BBE;&#x7F6E;UI&#x5143;&#x7D20;&#x7684;&#x521A;&#x5EA6;&#x548C;&#x963B;&#x5C3C;&#xFF0C;&#x7136;&#x540E;&#x7684;&#x4E8B;&#x5C31;&#x4EA4;&#x7ED9;&#x5145;&#x6EE1;&#x9B54;&#x529B;&#x7684;&#x7269;&#x7406;&#x5B66;&#x3002;&#x8FD9;&#x6837;&#xFF0C;&#x4F60;&#x5B8C;&#x5168;&#x4E0D;&#x7528;&#x7406;&#x4F1A;&#x8BF8;&#x5982;&#x52A8;&#x753B;&#x884C;&#x4E3A;&#x88AB;&#x6253;&#x65AD;&#x4E4B;&#x7C7B;&#x7684;&#x5927;&#x91CF;&#x95EE;&#x9898;&#x3002;&#x5E76;&#x4E14;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;&#x975E;&#x5E38;&#x6613;&#x7528;&#x7684;API</p>
+<p>&#x8FD9;&#x4E2A;&#x5E93;&#x540C;&#x65F6;&#x4E3A;React &#x7684; <code>TransitionGroup</code> &#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;&#x66F4;&#x52A0;&#x597D;&#x7684;api &#x9009;&#x62E9;</p>
+<h2 id="API"><a href="#API" class="headerlink" title="API"></a>API</h2><p>&#x8FD9;&#x4E2A;&#x5E93;&#x5BF9;&#x5916;&#x63D0;&#x4F9B;<code>Motion</code>, <code>StaggeredMotion</code>, <code>TransitionMotion</code>, <code>presets</code>, <code>spring</code> &#x548C; <code>utils</code></p>
+<h4 id="spring_3A_number_-_26gt_3B__3F_5Bstiffness_2C_damping_5D_-_26gt_3B_ConfigurationObject"><a href="#spring_3A_number_-_26gt_3B__3F_5Bstiffness_2C_damping_5D_-_26gt_3B_ConfigurationObject" class="headerlink" title="spring: number -&gt; ?[stiffness, damping] -&gt; ConfigurationObject"></a><code>spring: number -&gt; ?[stiffness, damping] -&gt; ConfigurationObject</code></h4><p>(<strong>&#x6CE8;&#x610F;</strong>: &#x4E0D;&#x5305;&#x542B; &#x7248;&#x672C;&lt;0.3.0 &#x7684; <code>Spring</code> &#x7EC4;&#x4EF6;)<br>&#x4E00;&#x822C;&#x7528;&#x6765;&#x8F85;&#x52A9;&#x6307;&#x5B9A;&#x5982;&#x4F55;&#x53D8;&#x5316;&#x5230;&#x76EE;&#x6807;&#x503C;&#xFF0C;&#x6BD4;&#x5982; <code>sprint(10,[120,17])</code> &#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5305;&#x542B;&#x79C1;&#x6709;&#x5C5E;&#x6027;&#x7684;&#x914D;&#x7F6E;&#x5BF9;&#x8C61;&#xFF0C;&#x5176;&#x7528;&#x6765;&#x63CF;&#x8FF0;&#x4E00;&#x4E2A;&#x643A;&#x5E26;&#x7269;&#x7406;&#x5B66;&#x521A;&#x5EA6;&#x4E3A;120&#x548C;&#x963B;&#x5C3C;&#x4E3A;17&#x2019;&#x2019;&#x5982;&#x4F55;&#x53D8;&#x52A8;&#x5230;10&#x3002;<code>spring(10)</code>&#x4E0D;&#x5E26;&#x6570;&#x7EC4;&#x53C2;&#x6570;&#x65F6;&#xFF0C;&#x5176;&#x9ED8;&#x8BA4;&#x53C2;&#x6570;&#x4E3A;<code>[170,26]</code>.<br>&#x4E0B;&#x9762;&#x4F1A;&#x6709;&#x66F4;&#x591A;&#x7684;&#x4F7F;&#x7528;&#x8BF4;&#x660E;&#xFF0C;&#x5E93;&#x7684;&#x914D;&#x7F6E;&#x53C2;&#x6570;&#x8BE6;&#x60C5;<a href="#presets">&#x70B9;&#x51FB;</a></p>
+<h3 id="26lt_3BMotion_/_26gt_3B"><a href="#26lt_3BMotion_/_26gt_3B" class="headerlink" title="&lt;Motion /&gt;"></a>&lt;Motion /&gt;</h3><p>&#x5C5E;&#x6027;</p>
+<h4 id="defaultStyle_3A__3FObject"><a href="#defaultStyle_3A__3FObject" class="headerlink" title="defaultStyle: ?Object"></a><code>defaultStyle: ?Object</code></h4><p><code>&#x53EF;&#x9009;&#x7684;&#x3002;</code>&#x63A5;&#x53D7;&#x4E00;&#x4E2A;&#x4EFB;&#x610F;&#x952E;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x7ED1;&#x5B9A;&#x503C;&#x5230;&#x4F60;&#x7684;&#x52A8;&#x753B;&#x7684;&#x914D;&#x7F6E;&#x5C5E;&#x6027;&#x503C;&#x4E2D;&#xFF0C;&#x8FD9;&#x4E2A;&#x503C;&#x53EA;&#x5728;&#x7EC4;&#x4EF6;&#x7B2C;&#x4E00;&#x6B21;&#x6E32;&#x67D3;&#x7684;&#x65F6;&#x5019;&#x8D77;&#x4F5C;&#x7528;&#xFF08;&#x4E4B;&#x540E;&#x7684;&#x6E32;&#x67D3;&#x4F1A;&#x5FFD;&#x7565;&#x8FD9;&#x4E2A;&#x5C5E;&#x6027;&#xFF09;</p>
+<h4 id="style_3A_Object"><a href="#style_3A_Object" class="headerlink" title="style: Object"></a><code>style: Object</code></h4><p><code>&#x5FC5;&#x586B;</code>&#x3002;&#x5728;&#x7EC4;&#x4EF6;&#x5B58;&#x5728;&#x7684;&#x6574;&#x4E2A;&#x5468;&#x671F;&#x5185;&#x5FC5;&#x987B;&#x4FDD;&#x6301;&#x540C;&#x6837;&#x7684;&#x952E;&#x3002;&#x5982;&#x679C;&#x63D0;&#x4F9B;&#x4E86;<code>defaultStyle</code>&#x5219;&#x5FC5;&#x987B;&#x4FDD;&#x6301;&#x4E00;&#x6837;&#x7684;&#x952E;&#x3002;&#x548C;<code>defaultStyle</code>&#x7C7B;&#x4F3C;&#xFF0C;&#x4F46;&#x662F;&#x76EE;&#x6807;&#x503C;&#x9700;&#x8981;&#x67E5;&#x8BE2;<code>spring</code>&#x7684;&#x914D;&#x7F6E;&#xFF1A;<code>{x: spring(10), y: spring(20, [120, 17])}</code><br><strong>&#x5982;&#x679C;&#x6CA1;&#x6709;&#x63D0;&#x4F9B;<code>Spring</code>&#x914D;&#x7F6E;&#xFF0C;&#x4E5F;&#x6CA1;&#x6709;&#x4F7F;&#x7528;&#x4E0B;&#x9762;&#x7684;&#x5B50;&#x51FD;&#x6570;&#x53C2;&#x6570;&#xFF0C;&#x800C;&#x662F;&#x76F4;&#x63A5;&#x7ED9;&#x5B9A;&#x4E00;&#x4E2A;&#x5E38;&#x6570;&#x503C;&#xFF0C;&#x7A0B;&#x5E8F;&#x5C06;&#x76F4;&#x63A5;&#x53D8;&#x5316;&#x5230;&#x7ED9;&#x5B9A;&#x7684;&#x503C;</strong></p>
+<h4 id="children_3A_Object_-_26gt_3B__3FReactElement"><a href="#children_3A_Object_-_26gt_3B__3FReactElement" class="headerlink" title="children: Object -&gt; ?ReactElement"></a><code>children: Object -&gt; ?ReactElement</code></h4><p>&#x9700;&#x8981; &#x4E00;&#x4E2A;&#x6709; <code>interpolated style</code> &#x5BF9;&#x8C61;&#x4E3A;&#x53C2;&#x6570;&#x7684; <strong>function</strong>&#xFF0C;&#x6BD4;&#x5982;&#xFF1A;<code>{x: 5.2, y: 12.1}</code> &#xFF0C;&#x5FC5;&#x987B;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;React &#x5143;&#x7D20;&#x8FDB;&#x884C;&#x6E32;&#x67D3;</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;Motion defaultStyle={{x: 0}} style={{x: spring(10, [120, 17])}}&gt;
+  {interpolatedStyle =&gt; &lt;div&gt;{interpolatedStyle.x}&lt;/div&gt;}
+&lt;/Motion&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="26lt_3BStaggeredMotion_/_26gt_3B"><a href="#26lt_3BStaggeredMotion_/_26gt_3B" class="headerlink" title="&lt;StaggeredMotion /&gt;"></a>&lt;StaggeredMotion /&gt;</h3><p>&#x5F53;&#x4F60;&#x9700;&#x8981;&#x4F7F;&#x4E00;&#x7CFB;&#x5217;&#x7684;&#x5143;&#x7D20;&#x52A8;&#x8D77;&#x6765;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x5305;&#x542B;<code>motion</code>&#x7684;&#x6570;&#x7EC4;&#xFF0C;&#x7136;&#x540E;&#x8BA9;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x5143;&#x7D20;&#x6328;&#x4E2A;&#x52A8;&#x8D77;&#x6765;&#x3002;&#x7136;&#x800C;&#x5E38;&#x89C1;&#x7684;&#x60C5;&#x5F62;&#x662F;&#xFF0C;&#x6211;&#x4EEC;&#x60F3;&#x4F7F;&#x4ED6;&#x4EEC;&#x95F4;&#x9694;&#x4E00;&#x6BB5;&#x65F6;&#x95F4;&#x7684;&#x4E00;&#x4E2A;&#x63A5;&#x4E00;&#x4E2A;&#x7684;&#x52A8;&#x8D77;&#x6765;&#x3002;&#x786C;&#x7F16;&#x7801;&#x52A8;&#x753B;&#x6301;&#x7EED;&#x65F6;&#x95F4;&#x4F3C;&#x4E4E;&#x53EF;&#x4EE5;&#x505A;&#x5230;&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x5982;&#x679C;&#x4F7F;&#x7528;<strong>&lt;StaggeredMotion /&gt;</strong>&#x5C06;&#x4F1A;&#x662F;&#x4E00;&#x79CD;&#x66F4;&#x52A0;&#x81EA;&#x7136;&#x7684;&#x7B26;&#x5408;&#x7269;&#x7406;&#x5B66;&#x7684;&#x9009;&#x62E9;&#xFF0C;&#x53EF;&#x4EE5;&#x8BA9;&#x5143;&#x7D20;&#x7684;&#x76EE;&#x6807;&#x4F4D;&#x7F6E;&#x57FA;&#x4E8E;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x7684;&#x5F53;&#x524D;&#x4F4D;&#x7F6E;</p>
+<h4 id="defaultStyles_3A__3FArray_26lt_3BObject_26gt_3B"><a href="#defaultStyles_3A__3FArray_26lt_3BObject_26gt_3B" class="headerlink" title="defaultStyles: ?Array&lt;Object&gt;"></a><code>defaultStyles: ?Array&lt;Object&gt;</code></h4><p><code>&#x53EF;&#x9009;</code>.&#x548C;<code>Motion</code>&#x7684;defaultStyle&#x5C5E;&#x6027;&#x7C7B;&#x4F3C;</p>
+<h4 id="styles_3A__3FArray_26lt_3BObject_26gt_3B_-_26gt_3B_Array_26lt_3BObject_26gt_3B"><a href="#styles_3A__3FArray_26lt_3BObject_26gt_3B_-_26gt_3B_Array_26lt_3BObject_26gt_3B" class="headerlink" title="styles: ?Array&lt;Object&gt; -&gt; Array&lt;Object&gt;"></a><code>styles: ?Array&lt;Object&gt; -&gt; Array&lt;Object&gt;</code></h4><p><code>&#x5FC5;&#x586B;</code> <strong>function</strong>&#x3002;&#x5C06;&#x4E4B;&#x524D;&#x7684;styles&#x6570;&#x7EC4;&#x4F5C;&#x4E3A;&#x51FD;&#x6570;&#x7684;&#x53C2;&#x6570;&#xFF08;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x63D0;&#x4F9B;<code>defaultStyles</code>&#x5219;<code>undefined</code>&#x4F5C;&#x4E3A;&#x7B2C;&#x4E00;&#x6B21;&#x6E32;&#x67D3;&#x65F6;&#x5019;&#x7684;&#x53C2;&#x6570;&#x4F20;&#x9012;&#x7ED9;&#x51FD;&#x6570;</p>
+<h4 id="children_3A_Array_26lt_3BObject_26gt_3B_-_26gt_3B__3FReactElement"><a href="#children_3A_Array_26lt_3BObject_26gt_3B_-_26gt_3B__3FReactElement" class="headerlink" title="children: Array&lt;Object&gt; -&gt; ?ReactElement"></a><code>children: Array&lt;Object&gt; -&gt; ?ReactElement</code></h4><p><code>&#x5FC5;&#x586B;</code> <strong>funciton</strong>&#x3002;&#x7C7B;&#x4F3C;<code>Motion</code>&#x7684;<code>children</code>,&#x4F46;&#x662F;&#x63A5;&#x6536;&#x4E00;&#x4E2A; <code>interpolated style</code> &#x6570;&#x7EC4;,&#x6BD4;&#x5982; <code>[{x:5},{x:8.1}]</code> </p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;StaggeredMotion
+  defaultStyles={[{x: 0}, {x: 10}, {x: 20}]}
+  styles={prevStyles =&gt; prevStyles.map((_, i) =&gt; {
+    return i === 0
+      ? {x: spring(this.state.mouseX)} // &#x7B2C;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x8DDF;&#x968F;&#x7740;&#x9F20;&#x6807;&#x7684;&#x4F4D;&#x7F6E;
+      : prevStyles[i - 1]; // &#x5143;&#x7D20;i &#x8DDF;&#x968F;&#x7740;&#x5B83;&#x7684;&#x524D;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x81EA;&#x7136;&#x7684;&#x8FD0;&#x52A8;&#x7684;`spring`&#x52A8;&#x753B;
+  })}&gt;
+  {interpolatedStyles =&gt;
+    &lt;div&gt;
+      {interpolatedStyles.map((style, i) =&gt;
+        &lt;div key={i} style={{left: style.x}} /&gt;
+      )}
+    &lt;/div&gt;
+  }
+&lt;/StaggeredMotion&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="26lt_3BTransitionMotion_/_26gt_3B"><a href="#26lt_3BTransitionMotion_/_26gt_3B" class="headerlink" title="&lt;TransitionMotion /&gt;"></a>&lt;TransitionMotion /&gt;</h3><p><strong>&#x4E00;&#x4E2A;&#x53EF;&#x4EE5;&#x5E2E;&#x52A9;&#x4F60;&#x589E;&#x52A0;&#x548C;&#x79FB;&#x9664;&#x52A8;&#x753B;&#x7684;&#x795E;&#x5947;&#x7EC4;&#x4EF6;</strong>&#x3002;&#x4E0D;&#x540C;&#x4E8E; React&#x7684;<code>TransitionGroup</code>,<code>TransitionMotion</code> &#x7528;&#x5143;&#x7D20;&#x7684;<code>styles</code>&#x5BF9;&#x8C61;&#x5C5E;&#x6027;&#x7684;&#x5F62;&#x5F0F;&#x6765;&#x505A;&#x533A;&#x5206;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x5F53;&#x5143;&#x7D20;&#x6D88;&#x5931;&#x7684;&#x65F6;&#x5019;&#x53BB;&#x4FDD;&#x7559;&#x4E00;&#x4E9B;&#x5143;&#x7D20;&#x3002;</p>
+<p><strong>&#x666E;&#x904D;&#x7684;&#x601D;&#x8DEF;</strong><br>&#x4F7F;&#x7528;<code>{myKey1: {x: spring(30)}, myKey2: {x: spring(20)}}</code>&#x4F5C;&#x4E3A;<code>TransitionMotion</code>&#x7684;<code>styles</code>&#x3002;<code>interpolated styles</code>&#x88AB;&#x4F20;&#x5165;&#x5230;&#x5B50;&#x51FD;&#x6570;&#x4E2D;&#xFF0C;&#x4E00;&#x6BB5;&#x65F6;&#x95F4;&#x540E;&#xFF0C;&#x53C2;&#x6570;&#x53D8;&#x5316;&#x4E3A;<code>{myKey1: {x: 15.1}, myKey2: {x: 8.2}}</code></p>
+<p>&#x4E00;&#x6BB5;&#x65F6;&#x95F4;&#x8FC7;&#x540E;&#xFF0C;&#x4F60;&#x5220;&#x9664;&#x4E86;<code>mykey1</code> &#x548C;&#x5B83;&#x7684;<code>style</code>&#x914D;&#x7F6E;&#xFF0C;&#x56E0;&#x6B64;&#x65B0;&#x7684;&#x7684;<code>styles</code>&#x53D8;&#x4E3A; <code>{mykey2:{x:spring(20)}}</code>&#x3002;<code>TransitionMotion</code>&#x53D1;&#x73B0;&#x4E86;&#x5C11;&#x4E86;<code>mykey1</code>,&#x4F46;&#x662F;&#x5728;<code>interpolated style</code>&#x4E2D;&#x8FD8;&#x662F;<strong>&#x4FDD;&#x7559;</strong><code>mykey1</code>&#x7684;&#x503C;<code>{myKey1: ..., myKey2: ...}</code>&#x3002;</p>
+<p>&#x5F53;<code>TransitionMotion</code>&#x8C03;&#x7528;&#x4F60;&#x63D0;&#x4F9B;&#x7684;<code>willLeave</code> &#x5C5E;&#x6027;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5C06;<code>mykey1</code>&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#x4F20;&#x9012;&#x3002;&#x4F60;&#x9700;&#x8981;&#x5728;<code>willLeave</code>&#x4E2D;&#x4E3A;<code>mykey1</code>&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x7EC8;&#x6001;&#x7684;<code>style</code>&#x914D;&#x7F6E;&#xFF0C;&#x6BD4;&#x5982;&#xFF1A;<code>{x: spring(50)}</code>,&#x4F5C;&#x4E3A;&#x5176;&#x76EE;&#x6807;&#x503C;&#xFF0C;&#x5F53;<code>interpolatedStyles.myKey1</code>&#x53D8;&#x5316;&#x5230;&#x8FD9;&#x4E2A;&#x503C;&#x540E;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x8BA9;<code>TransitionMotion</code>&#x4ECE;<code>interpolated style</code>&#x771F;&#x6B63;&#x7684;&#x79FB;&#x9664;<code>mykey1</code>&#x4EE5;&#x53CA;&#x5BF9;&#x5E94;&#x7684;<code>style</code>&#x914D;&#x7F6E;</p>
+<p>&#x7EC8;&#x4E0A;&#x6240;&#x8FF0;:<code>styles</code>&#x4ECE;&#x521D;&#x59CB;&#x72B6;&#x6001; <code>{k1: {x: spring(30)}, k2: {x: spring(20)}}</code>,&#x518D;&#x6B21;&#x6E32;&#x67D3;&#x540E;<code>styles</code>&#x4E3A;<code>{k2: {x: spring(20)}}</code>&#x3002;&#x4F20;&#x9012;&#x7ED9;&#x5B50;&#x51FD;&#x6570;&#x7684;<code>interpolated style</code> &#x4E2D;&#x7684;<code>styles</code>&#x5E76;&#x6CA1;&#x6709;&#x88AB;&#x5F71;&#x54CD;&#xFF08;&#x8FD8;&#x662F;&#x5305;&#x542B;&#x4E86;<code>mykey1</code>)&#xFF0C;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF0C;&#x5728;<code>k1: configReturnedFromWillLeave</code>(<code>{x: spring(50)}</code>)&#x4E2D;&#x8FD4;&#x56DE;&#x7684;<code>mykey1</code>&#x90E8;&#x5206;&#x5E76;&#x6CA1;&#x6709;&#x771F;&#x6B63;&#x7684;&#x5B58;&#x5728;&#x4E8E;<code>styles</code>&#x4E2D;&#x3002;&#x4E00;&#x6BB5;&#x65F6;&#x95F4;&#x8FC7;&#x540E;&#xFF0C;<code>interpolated styles</code>&#x53D8;&#x4E3A; <code>{k1: {x: 50}, k2: {x: 19.2}}</code>&#xFF0C;&#x7136;&#x540E;&#x518D;&#x6B21;&#x6E32;&#x67D3;&#x7684;&#x65F6;&#x5019;&#xFF0C;<code>mykey1</code>&#x5DF2;&#x7ECF;&#x88AB;&#x5220;&#x9664;&#xFF0C;&#x53EA;&#x5269;&#x4E0B;<code>{k2: {x: 19.2}}</code>&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x5728;&#x6700;&#x540E;&#x4E00;&#x6B21;&#x6E32;&#x67D3;&#x4E4B;&#x524D;&#xFF0C;&#x6620;&#x5C04;&#x5728;<code>interpolate styles</code>&#x7684;&#x5143;&#x7D20;&#x4F1A;&#x6E32;&#x67D3;2&#x6B21;</p>
+<h4 id="defaultStyles_3A__3FObject_26lt_3Bstring_2C_Object_26gt_3B"><a href="#defaultStyles_3A__3FObject_26lt_3Bstring_2C_Object_26gt_3B" class="headerlink" title="defaultStyles: ?Object&lt;string, Object&gt;"></a><code>defaultStyles: ?Object&lt;string, Object&gt;</code></h4><p><code>&#x53EF;&#x9009;</code>&#x3002;&#x63A5;&#x53D7;&#x4E00;&#x4E2A;<code>{myKey1: styleObject, myKey2: styleObject}</code> &#x8FD9;&#x6837;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x5176;&#x4E2D;&#x6BCF;&#x4E00;&#x4E2A;<code>styleObject</code>&#x7684;&#x89C4;&#x5219;&#x548C;<code>Motion</code>&#x7684;<code>defaultStyle</code>&#x4E00;&#x6837;&#x3002;&#x5176;&#x4E2D;<code>key</code>&#x5FC5;&#x987B;&#x4E3A;&#x552F;&#x4E00;&#x7684;<strong>&#x975E;&#x6570;&#x5B57;</strong></p>
+<h4 id="styles_3A_Object__7C__28_3FObject_-_26gt_3B_Object_29"><a href="#styles_3A_Object__7C__28_3FObject_-_26gt_3B_Object_29" class="headerlink" title="styles: Object | (?Object -&gt; Object)"></a><code>styles: Object | (?Object -&gt; Object)</code></h4><p><code>&#x5FC5;&#x586B;</code>&#x3002;&#x63A5;&#x53D7;&#x4E00;&#x4E2A;&#x7C7B;&#x4F3C;<code>defaultStyles</code>&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x4F46;&#x662F;<code>styleObject</code>&#x9700;&#x8981;&#x6709;<code>spring</code>&#x914D;&#x7F6E;&#xFF08;<code>{myKey1: {x: spring(10)}, myKey2: {y: spring(20)}}</code>&#xFF09;&#xFF0C;&#x6216;&#x8005;&#x63A5;&#x53D7;&#x4E00;&#x4E2A;&#x5E26;<code>prevStyles</code> &#x53C2;&#x6570;&#xFF08;&#x7C7B;&#x4F3C;<code>StaggeredMotion</code>&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x4EA4;&#x53C9;&#x7684;&#x53D6;&#x6D88;&#x52A8;&#x753B;&#xFF09;&#x548C;&#x8FD4;&#x56DE;&#x503C;&#x4E3A;&#x76EE;&#x6807;<code>style</code>&#x7684;&#x65B9;&#x6CD5;</p>
+<h4 id="willEnter_3A__28string_2C_Object_2C_Object_2C_Object_2C_Object_29_-_26gt_3B_Object"><a href="#willEnter_3A__28string_2C_Object_2C_Object_2C_Object_2C_Object_29_-_26gt_3B_Object" class="headerlink" title="willEnter: (string, Object, Object, Object, Object) -&gt; Object"></a><code>willEnter: (string, Object, Object, Object, Object) -&gt; Object</code></h4><p><code>&#x53EF;&#x9009;</code>&#x3002;&#x4F20;&#x9012;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x4E3A;<code>(keyFromStylesThatJustEntered, correspondingStyleOfKey, styles, currentInterpolatedStyle, currentSpeed)</code>&#x8FD4;&#x56DE;&#x503C;&#x4E3A;&#x7C7B;&#x4F3C;<code>defaultStyle</code>&#x7684;<code>style</code>&#x5BF9;&#x8C61;&#x7684;&#x65B9;&#x6CD5;<br>&#x65B9;&#x6CD5;&#x7684;&#x9ED8;&#x8BA4;&#x8FD4;&#x56DE;&#x503C;&#x4E3A;<code>correspondingStyleOfKey</code>&#xFF0C;&#x6BD4;&#x5982;&#x4E0A;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x4E3A;<code>{x: spring(20)}</code>&#x3002;</p>
+<h4 id="willLeave_3A__28string_2C_Object_2C_Object_2C_Object_2C_Object_29_-_26gt_3B_Object"><a href="#willLeave_3A__28string_2C_Object_2C_Object_2C_Object_2C_Object_29_-_26gt_3B_Object" class="headerlink" title="willLeave: (string, Object, Object, Object, Object) -&gt; Object"></a><code>willLeave: (string, Object, Object, Object, Object) -&gt; Object</code></h4><p><code>&#x53EF;&#x9009;</code>&#x3002;&#x4F20;&#x9012;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x4E3A;<code>(keyThatJustLeft, correspondingStyleOfKey, styles, currentInterpolatedStyle, currentSpeed)</code>&#x5E76;&#x4E14;&#x8FD4;&#x56DE;&#x503C;&#x4E3A;&#x5305;&#x542B;<code>spring(...)</code>&#x4F5C;&#x4E3A;&#x76EE;&#x6807;&#x914D;&#x7F6E; &#x7684;<code>style</code>&#x5BF9;&#x8C61;</p>
+<p>&#x53EF;&#x9009;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;correspondingStyleOfKey&#xFF0C;&#x5373;&#x7ACB;&#x523B;&#x4ECE;<code>interpolated style</code>&#x4E2D;&#x79FB;&#x9664;key</p>
+<h4 id="children_3A_Object_-_26gt_3B__3FReactElement-1"><a href="#children_3A_Object_-_26gt_3B__3FReactElement-1" class="headerlink" title="children: Object -&gt; ?ReactElement"></a><code>children: Object -&gt; ?ReactElement</code></h4><p><code>&#x5FC5;&#x586B; **function**</code>.&#x540C;<code>Motion</code>&#x7684;<code>children</code>&#xFF0C;&#x4E0D;&#x540C;&#x7684;&#x662F;&#x63A5;&#x53D7;&#x4E00;&#x4E2A;<code>interpolated styles</code>&#x5BF9;&#x8C61;</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">const Demo = React.createClass({
+  getInitialState() {
+    return {
+      blocks: {
+        a: &apos;I am a&apos;,
+        b: &apos;I am b&apos;,
+        c: &apos;I am c&apos;,
+      },
+    };
+  },
+
+  getStyles() {
+    let configs = {};
+    Object.keys(this.state.blocks).forEach(key =&gt; {
+      configs[key] = {
+        opacity: spring(1),
+        text: this.state.blocks[key], // not interpolated
+      };
+    });
+    return configs;
+  },
+
+  // not used here! We don&apos;t add any new item
+  willEnter(key) {
+    return {
+      opacity: spring(0), // start at 0, gradually expand
+      text: this.state.blocks[key], // this is really just carried around so
+      // that interpolated values can still access the text when the key is gone
+      // from actual `styles`
+    };
+  },
+
+  willLeave(key, style) {
+    return {
+      opacity: spring(0), // make opacity reach 0, after which we can kill the key
+      text: style.text,
+    };
+  },
+
+  handleClick(key) {
+    const {...newBlocks} = this.state.blocks;
+    delete newBlocks[key];
+    this.setState({blocks: newBlocks});
+  },
+
+  render() {
+    return (
+      &lt;TransitionMotion
+        styles={this.getStyles()}
+        willEnter={this.willEnter}
+        willLeave={this.willLeave}&gt;
+        {interpolatedStyles =&gt;
+          &lt;div&gt;
+            {Object.keys(interpolatedStyles).map(key =&gt; {
+              const {text, ...style} = interpolatedStyles[key];
+              return (
+                &lt;div onClick={this.handleClick.bind(null, key)} style={style}&gt;
+                  {text}
+                &lt;/div&gt;
+              );
+            })}
+          &lt;/div&gt;
+        }
+      &lt;/TransitionMotion&gt;
+    );
+  },
+});</span><br></pre></td></tr></table></figure>
+<h3 id="presets"><a href="#presets" class="headerlink" title="presets"></a><code>presets</code></h3><p>&#x4F60;&#x53EF;&#x4EE5;&#x4F18;&#x96C5;&#x7684;&#x5728;&#x4F60;&#x7684;<code>style</code>&#x9884;&#x7F6E;&#x4F60;&#x7684;<code>spring</code>&#x53C2;&#x6570;&#xFF0C;&#x5C31;&#x50CF;&#x8FD9;&#x6837;<code>spring(10, presets.wobbly)</code>. <a href="https://github.com/chenglou/react-motion/blob/043231a84e420ba1cc7f5b0ceb1753a6406d38f1/src/presets.js" target="_blank" rel="external">&#x70B9;&#x51FB;&#x8BE6;&#x60C5;</a>.</p>
+<h3 id="utils"><a href="#utils" class="headerlink" title="utils"></a><code>utils</code></h3><p>&#x56E0;&#x4E3A;<code>TransitionMotion</code>&#x89C4;&#x5B9A;<code>styles</code>&#x5FC5;&#x987B;&#x4E3A;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x64CD;&#x4F5C;&#x5BF9;&#x8C61;&#x4E2D;&#x7684;<code>key</code>&#x4F1A;&#x6BD4;&#x64CD;&#x4F5C;&#x6570;&#x7EC4;&#x663E;&#x5F97;&#x7E41;&#x7410;&#xFF0C;&#x4E0B;&#x9762;&#x6709;&#x4E00;&#x4E9B;&#x516C;&#x5171;&#x573A;&#x666F;&#x4E0B;&#x7684;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF1A;</p>
 <ul>
-<li>在开始的时候插入元素:<code>{newKey: myConfigForThisKey, ...oldConfigs}</code></li>
-<li>在最后的时候插入元素:<code>{...oldConfigs, newKey: myConfigForThisKey}</code></li>
-<li>Slice/splice/reverse/sort：<code>utils.reorderKeys</code>库提供这些方法<br><strong>注意</strong>：对象的keys的创建顺序默认为升序，<code>TransitionMotion</code>中不能将数字作为key。幸运的是，你可以增加一个字母将数字转换为字符。<br>###<code>reorderKeys: (Object, Function) -&gt; Object</code><br><code>utils.reorderKeys({a: 1, b: 2}, (keysArray) =&gt; [&#39;b&#39;, &#39;a&#39;]) // gives {b: 2, a: 1}</code></li>
+<li>&#x5728;&#x5F00;&#x59CB;&#x7684;&#x65F6;&#x5019;&#x63D2;&#x5165;&#x5143;&#x7D20;:<code>{newKey: myConfigForThisKey, ...oldConfigs}</code></li>
+<li>&#x5728;&#x6700;&#x540E;&#x7684;&#x65F6;&#x5019;&#x63D2;&#x5165;&#x5143;&#x7D20;:<code>{...oldConfigs, newKey: myConfigForThisKey}</code></li>
+<li>Slice/splice/reverse/sort&#xFF1A;<code>utils.reorderKeys</code>&#x5E93;&#x63D0;&#x4F9B;&#x8FD9;&#x4E9B;&#x65B9;&#x6CD5;<br><strong>&#x6CE8;&#x610F;</strong>&#xFF1A;&#x5BF9;&#x8C61;&#x7684;keys&#x7684;&#x521B;&#x5EFA;&#x987A;&#x5E8F;&#x9ED8;&#x8BA4;&#x4E3A;&#x5347;&#x5E8F;&#xFF0C;<code>TransitionMotion</code>&#x4E2D;&#x4E0D;&#x80FD;&#x5C06;&#x6570;&#x5B57;&#x4F5C;&#x4E3A;key&#x3002;&#x5E78;&#x8FD0;&#x7684;&#x662F;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x589E;&#x52A0;&#x4E00;&#x4E2A;&#x5B57;&#x6BCD;&#x5C06;&#x6570;&#x5B57;&#x8F6C;&#x6362;&#x4E3A;&#x5B57;&#x7B26;&#x3002;<br>###<code>reorderKeys: (Object, Function) -&gt; Object</code><br><code>utils.reorderKeys({a: 1, b: 2}, (keysArray) =&gt; [&apos;b&apos;, &apos;a&apos;]) // gives {b: 2, a: 1}</code></li>
 </ul>
-<p><code>Function</code>的参数为，在<code>Object</code>中的key数组并且返回一个新的<code>keys</code>数组（数组的顺序变化，或者新增/删除<code>key</code>）。<code>reorderKeys</code>最终返回一个由新的<code>key</code>排序方式的对象</p>
+<p><code>Function</code>&#x7684;&#x53C2;&#x6570;&#x4E3A;&#xFF0C;&#x5728;<code>Object</code>&#x4E2D;&#x7684;key&#x6570;&#x7EC4;&#x5E76;&#x4E14;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x65B0;&#x7684;<code>keys</code>&#x6570;&#x7EC4;&#xFF08;&#x6570;&#x7EC4;&#x7684;&#x987A;&#x5E8F;&#x53D8;&#x5316;&#xFF0C;&#x6216;&#x8005;&#x65B0;&#x589E;/&#x5220;&#x9664;<code>key</code>&#xFF09;&#x3002;<code>reorderKeys</code>&#x6700;&#x7EC8;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x7531;&#x65B0;&#x7684;<code>key</code>&#x6392;&#x5E8F;&#x65B9;&#x5F0F;&#x7684;&#x5BF9;&#x8C61;</p>
 
       
     </div>
@@ -338,7 +555,7 @@
     <div class="outer">
         <div id="footer-info">
             <div class="footer-left">
-                &copy; 2016 yuxuan
+                &copy; 2016 余轩
             </div>
             <div class="footer-right">
                 <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的静态博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减双栏 Hexo 博客主题">Yelee</a> by MOxFIVE
